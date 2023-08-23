@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const Header = (props) => {
@@ -26,24 +25,28 @@ const Header = (props) => {
                                 <span>Home</span>
                             </a>
                         </NavList>
+
                         <NavList>
                             <a>
                                 <img src="/images/nav-network.svg" alt="" />
                                 <span>My Network</span>
                             </a>
                         </NavList>
+
                         <NavList>
                             <a>
                                 <img src="/images/nav-jobs.svg" alt="" />
                                 <span>Jobs</span>
                             </a>
                         </NavList>
+
                         <NavList>
                             <a>
                                 <img src="/images/nav-messaging.svg" alt="" />
                                 <span>Messaging</span>
                             </a>
                         </NavList>
+
                         <NavList>
                             <a>
                                 <img
@@ -60,10 +63,12 @@ const Header = (props) => {
                                 <span>Me</span>
                                 <img src="/images/down-icon.svg" alt="" />
                             </a>
+
                             <SignOut>
                                 <a>Sign Out</a>
                             </SignOut>
                         </User>
+
                         <Work>
                             <a>
                                 <img src="/images/nav-work.svg" alt="" />
@@ -90,6 +95,7 @@ const Container = styled.div`
     width: 100vw;
     z-index: 100;
 `;
+
 const Content = styled.div`
     display: flex;
     align-items: center;
@@ -189,11 +195,13 @@ const NavList = styled.li`
         min-width: 80px;
         position: relative;
         text-decoration: none;
+
         span {
             color: rgba(0, 0, 0, 0.6);
             display: flex;
             align-items: center;
         }
+
         @media (max-width: 768px) {
             min-width: 70px;
         }
@@ -241,12 +249,13 @@ const User = styled(NavList)`
 
     &:hover {
         ${SignOut} {
-            display: flex;
             align-items: center;
+            display: flex;
             justify-content: center;
         }
     }
 `;
+
 const Work = styled(User)`
     border-left: 1px solid rgba(0, 0, 0, 0.08);
 `;
